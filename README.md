@@ -152,5 +152,16 @@ async def _send_qq_notification(self, qq_number: str, message: str):
 
 ```python
 # db_manager.py 第2812-2843行
-async def _send_email_via_api(self, email: str, subject: str, 
+async def _send_email_via_ap
 ```
+
+</details>
+
+---
+
+## 个人备注
+
+> ⚠️ **部署前务必修改以下默认值**（否则存在严重安全风险）：
+> - `DEFAULT_ADMIN_PASSWORD`：改为强密码，不要使用 `admin123`
+> - `API_SECRET_KEY`：改为随机生成的密钥
+> - 如不需要QQ通知功能，建议在配置中禁用，避免聊天内容发送至第三方服务器
